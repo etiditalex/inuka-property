@@ -3,38 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloads - Testimonials | Inuka Afrika Properties Limited</title>
-    <meta name="description" content="Download brochures, property guides, market reports, and other valuable resources from Inuka Afrika Properties Limited. Access comprehensive information about our properties and services.">
+    <title>Downloads - Inuka Afrika Properties Limited</title>
+    <meta name="description" content="Download important documents, brochures, and resources from Inuka Afrika Properties Limited. Get access to property information and investment guides.">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header has-top-bar">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-content">
-                    <div class="contact-info">
-                        <span><i class="fas fa-phone"></i> +254 700 000 000</span>
-                        <span><i class="fas fa-envelope"></i> info@inukaafrika.com</span>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header class="header">
+        <!-- Navigation -->
         <nav class="navbar">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties Limited Logo">
+                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties" class="logo-img">
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="../index.html">Home</a></li>
-                    <li class="nav-item"><a href="../land-for-sale.html">Land for Sale</a></li>
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../land-for-sale.html" class="nav-link">Land for Sale</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
@@ -53,15 +43,19 @@
                             <li><a href="../insider/market-research.html">Market Research</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown active">
-                        <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active">Testimonials <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../testimonials/client-testimonials.html">Client Testimonials</a></li>
-                            <li><a href="../testimonials/downloads.html">Downloads</a></li>
+                            <li><a href="client-testimonials.html">Client Testimonials</a></li>
+                            <li><a href="downloads.html" class="active">Downloads</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a href="../contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a href="../book-visit.html" class="btn btn-primary book-visit-btn">Book a Site Visit</a></li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../book-visit.html" class="btn btn-primary book-visit-btn">Book a Site Visit</a>
+                    </li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -76,8 +70,8 @@
     <section class="page-header">
         <div class="container">
             <div class="page-header-content">
-                <h1>Downloads & Resources</h1>
-                <p>Access comprehensive information, guides, and resources to help you make informed real estate investment decisions</p>
+                <h1>Downloads</h1>
+                <p>Access important documents, brochures, and resources</p>
                 <nav class="breadcrumb">
                     <a href="../index.html">Home</a>
                     <span>/</span>
@@ -89,391 +83,133 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Download Categories -->
-        <section class="download-categories">
-            <div class="container">
-                <h2>Browse Resources by Category</h2>
-                <div class="category-filters">
-                    <button class="category-btn active" data-category="all">All Resources</button>
-                    <button class="category-btn" data-category="brochures">Property Brochures</button>
-                    <button class="category-btn" data-category="guides">Investment Guides</button>
-                    <button class="category-btn" data-category="reports">Market Reports</button>
-                    <button class="category-btn" data-category="legal">Legal Documents</button>
-                </div>
+    <!-- Downloads Section -->
+    <section class="downloads-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Available Resources</h2>
+                <p>Download important documents and resources to help with your investment decisions</p>
             </div>
-        </section>
-
-        <!-- Property Brochures -->
-        <section class="download-section" data-category="brochures">
-            <div class="container">
-                <h2>Property Brochures</h2>
-                <div class="downloads-grid">
-                    <div class="download-card" data-category="brochures">
-                        <div class="download-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Nairobi West Development Brochure</h3>
-                            <p>Comprehensive guide to our latest residential development in Nairobi West, featuring floor plans, amenities, and investment highlights.</p>
-                            <div class="download-meta">
-                                <span class="file-size">2.4 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Brochure</a>
-                        </div>
+            
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
                     </div>
-
-                    <div class="download-card" data-category="brochures">
-                        <div class="download-icon">
-                            <i class="fas fa-file-pdf"></i>
+                    <div class="download-content">
+                        <h3>Property Investment Guide</h3>
+                        <p>Comprehensive guide to investing in Kenyan real estate, including legal requirements, market analysis, and investment strategies.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> PDF, 2.5 MB</span>
+                            <span><i class="fas fa-download"></i> 1,247 downloads</span>
                         </div>
-                        <div class="download-content">
-                            <h3>Mombasa Coastal Properties Guide</h3>
-                            <p>Explore our coastal property portfolio in Mombasa, including residential and commercial opportunities with stunning ocean views.</p>
-                            <div class="download-meta">
-                                <span class="file-size">3.1 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="brochures">
-                        <div class="download-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Nakuru Investment Properties</h3>
-                            <p>Discover investment opportunities in Nakuru County with our detailed property guide and market analysis.</p>
-                            <div class="download-meta">
-                                <span class="file-size">1.8 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="brochures">
-                        <div class="download-icon">
-                            <i class="fas fa-file-pdf"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Kisumu Lake Region Properties</h3>
-                            <p>Comprehensive overview of properties in the Lake Region Economic Bloc, featuring strategic investment locations.</p>
-                            <div class="download-meta">
-                                <span class="file-size">2.2 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Guide
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Investment Guides -->
-        <section class="download-section" data-category="guides">
-            <div class="container">
-                <h2>Investment Guides</h2>
-                <div class="downloads-grid">
-                    <div class="download-card" data-category="guides">
-                        <div class="download-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>First-Time Property Buyer's Guide</h3>
-                            <p>Essential guide for first-time property buyers, covering everything from property selection to financing and legal processes.</p>
-                            <div class="download-meta">
-                                <span class="file-size">4.2 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
                     </div>
-
-                    <div class="download-card" data-category="guides">
-                        <div class="download-icon">
-                            <i class="fas fa-chart-line"></i>
+                    <div class="download-content">
+                        <h3>Title Deed Process Guide</h3>
+                        <p>Step-by-step guide to understanding the title deed process in Kenya, including required documents and timelines.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> PDF, 1.8 MB</span>
+                            <span><i class="fas fa-download"></i> 892 downloads</span>
                         </div>
-                        <div class="download-content">
-                            <h3>Real Estate Investment Strategies</h3>
-                            <p>Advanced investment strategies and portfolio diversification techniques for experienced real estate investors.</p>
-                            <div class="download-meta">
-                                <span class="file-size">5.8 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Guide
+                        </a>
                     </div>
+                </div>
 
-                    <div class="download-card" data-category="guides">
-                        <div class="download-icon">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Property Development Guide</h3>
-                            <p>Comprehensive guide to property development, including planning, construction, and project management insights.</p>
-                            <div class="download-meta">
-                                <span class="file-size">6.5 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
                     </div>
+                    <div class="download-content">
+                        <h3>Property Brochure 2024</h3>
+                        <p>Latest property portfolio featuring available land plots, locations, prices, and investment opportunities.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> PDF, 3.2 MB</span>
+                            <span><i class="fas fa-download"></i> 2,156 downloads</span>
+                        </div>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Brochure
+                        </a>
+                    </div>
+                </div>
 
-                    <div class="download-card" data-category="guides">
-                        <div class="download-icon">
-                            <i class="fas fa-globe-africa"></i>
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Investment Calculator</h3>
+                        <p>Excel spreadsheet to calculate potential returns on land investments, including appreciation and rental income projections.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> Excel, 1.1 MB</span>
+                            <span><i class="fas fa-download"></i> 567 downloads</span>
                         </div>
-                        <div class="download-content">
-                            <h3>Kenya Real Estate Market Guide</h3>
-                            <p>In-depth analysis of Kenya's real estate market, including regional opportunities and investment hotspots.</p>
-                            <div class="download-meta">
-                                <span class="file-size">3.9 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Calculator
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Legal Requirements Checklist</h3>
+                        <p>Comprehensive checklist of all legal requirements for buying land in Kenya, including KRA, bank, and government requirements.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> PDF, 0.8 MB</span>
+                            <span><i class="fas fa-download"></i> 1,034 downloads</span>
                         </div>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Checklist
+                        </a>
+                    </div>
+                </div>
+
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="download-content">
+                        <h3>Market Research Report</h3>
+                        <p>Latest market analysis and trends in Kenyan real estate, including price movements and investment hotspots.</p>
+                        <div class="download-meta">
+                            <span><i class="fas fa-file"></i> PDF, 4.1 MB</span>
+                            <span><i class="fas fa-download"></i> 743 downloads</span>
+                        </div>
+                        <a href="#" class="btn btn-primary download-btn">
+                            <i class="fas fa-download"></i> Download Report
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Market Reports -->
-        <section class="download-section" data-category="reports">
-            <div class="container">
-                <h2>Market Reports & Analysis</h2>
-                <div class="downloads-grid">
-                    <div class="download-card" data-category="reports">
-                        <div class="download-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Q4 2024 Market Performance Report</h3>
-                            <p>Comprehensive analysis of Kenya's real estate market performance, trends, and forecasts for the fourth quarter of 2024.</p>
-                            <div class="download-meta">
-                                <span class="file-size">8.7 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Report</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="reports">
-                        <div class="download-icon">
-                            <i class="fas fa-map-marked-alt"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Regional Market Analysis 2024</h3>
-                            <p>Detailed analysis of key regional markets across Kenya, including Nairobi, Mombasa, Nakuru, and Kisumu.</p>
-                            <div class="download-meta">
-                                <span class="file-size">6.2 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Report</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="reports">
-                        <div class="download-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Commercial Real Estate Outlook</h3>
-                            <p>Specialized report on commercial real estate trends, office spaces, retail properties, and industrial developments.</p>
-                            <div class="download-meta">
-                                <span class="file-size">4.8 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Report</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="reports">
-                        <div class="download-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Investment ROI Analysis 2024</h3>
-                            <p>Comprehensive return on investment analysis for different property types and locations across Kenya.</p>
-                            <div class="download-meta">
-                                <span class="file-size">5.4 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Report</a>
-                        </div>
-                    </div>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need More Information?</h2>
+                <p>Contact our team for personalized assistance with your investment decisions</p>
+                <div class="cta-buttons">
+                    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="../book-visit.html" class="btn btn-secondary">Book a Site Visit</a>
                 </div>
             </div>
-        </section>
-
-        <!-- Legal Documents -->
-        <section class="download-section" data-category="legal">
-            <div class="container">
-                <h2>Legal Documents & Forms</h2>
-                <div class="downloads-grid">
-                    <div class="download-card" data-category="legal">
-                        <div class="download-icon">
-                            <i class="fas fa-file-contract"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Property Purchase Agreement Template</h3>
-                            <p>Standard property purchase agreement template with legal clauses and terms for property transactions.</p>
-                            <div class="download-meta">
-                                <span class="file-size">1.2 MB</span>
-                                <span class="file-type">DOCX</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Template</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="legal">
-                        <div class="download-icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Legal Requirements Checklist</h3>
-                            <p>Comprehensive checklist of legal requirements and documentation needed for property transactions in Kenya.</p>
-                            <div class="download-meta">
-                                <span class="file-size">0.8 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Checklist</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="legal">
-                        <div class="download-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Property Rights & Regulations Guide</h3>
-                            <p>Guide to property rights, land laws, and regulations governing real estate transactions in Kenya.</p>
-                            <div class="download-meta">
-                                <span class="file-size">2.1 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Nov 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Guide</a>
-                        </div>
-                    </div>
-
-                    <div class="download-card" data-category="legal">
-                        <div class="download-icon">
-                            <i class="fas fa-file-signature"></i>
-                        </div>
-                        <div class="download-content">
-                            <h3>Due Diligence Checklist</h3>
-                            <p>Essential due diligence checklist for property buyers to ensure thorough investigation before purchase.</p>
-                            <div class="download-meta">
-                                <span class="file-size">1.5 MB</span>
-                                <span class="file-type">PDF</span>
-                                <span class="last-updated">Updated: Dec 2024</span>
-                            </div>
-                            <a href="#" class="btn btn-primary">Download Checklist</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Tools -->
-        <section class="interactive-tools">
-            <div class="container">
-                <h2>Interactive Tools & Calculators</h2>
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <div class="tool-content">
-                            <h3>Mortgage Calculator</h3>
-                            <p>Calculate monthly mortgage payments, interest rates, and loan terms for your property investment.</p>
-                            <a href="#" class="btn btn-secondary">Use Calculator</a>
-                        </div>
-                    </div>
-
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="tool-content">
-                            <h3>ROI Calculator</h3>
-                            <p>Calculate potential return on investment for different property types and locations.</p>
-                            <a href="#" class="btn btn-secondary">Use Calculator</a>
-                        </div>
-                    </div>
-
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-map"></i>
-                        </div>
-                        <div class="tool-content">
-                            <h3>Property Comparison Tool</h3>
-                            <p>Compare different properties side by side to make informed investment decisions.</p>
-                            <a href="#" class="btn btn-secondary">Use Tool</a>
-                        </div>
-                    </div>
-
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="tool-content">
-                            <h3>Market Research Tool</h3>
-                            <p>Access real-time market data and trends to analyze property investment opportunities.</p>
-                            <a href="#" class="btn btn-secondary">Use Tool</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Subscription -->
-        <section class="newsletter-section">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h2>Stay Updated with Latest Resources</h2>
-                    <p>Subscribe to our newsletter to receive new downloads, market updates, and exclusive investment insights directly in your inbox.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </form>
-                    <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Ready to Access Premium Resources?</h2>
-                    <p>Download our comprehensive guides and reports to make informed real estate investment decisions.</p>
-                    <div class="cta-buttons">
-                        <a href="../land-for-sale.html" class="btn btn-primary">Browse Properties</a>
-                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -481,7 +217,7 @@
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-logo">
-                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties Limited Logo">
+                        <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties" class="logo-img">
                         <h3>Inuka Afrika Properties Limited</h3>
                     </div>
                     <div class="footer-section">
@@ -491,30 +227,32 @@
                             <li><a href="../land-for-sale.html">Land for Sale</a></li>
                             <li><a href="../about/who-we-are.html">About Us</a></li>
                             <li><a href="../contact.html">Contact</a></li>
+                            <li><a href="../book-visit.html">Book Site Visit</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="../land-for-sale.html">Property Sales</a></li>
-                            <li><a href="../about/why-us.html">Investment Consulting</a></li>
-                            <li><a href="../book-visit.html">Site Visits</a></li>
-                            <li><a href="../insider/market-research.html">Market Research</a></li>
+                            <li><a href="../land-for-sale.html">Land Sales</a></li>
+                            <li><a href="../land-for-sale.html">Affordable Housing</a></li>
+                            <li><a href="../contact.html">Property Management</a></li>
+                            <li><a href="../contact.html">Title Deed Processing</a></li>
+                            <li><a href="../contact.html">Investment Consulting</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <h4>Contact Info</h4>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Nairobi, Kenya</span>
-                        </div>
-                        <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+254 700 000 000</span>
+                            <span>+254 711 082 084</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>info@inukaafrika.com</span>
+                            <span>info@inukaproperties.co.ke</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Along Links Road, Nyali - Mombasa</span>
                         </div>
                     </div>
                 </div>
