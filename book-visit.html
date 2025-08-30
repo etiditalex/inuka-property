@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Site Visit - Inuka Afrika Properties Limited</title>
+    <meta name="description" content="Book a site visit to view our premium land parcels and properties. Schedule your visit with our real estate experts.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> +254 711 082 084</span>
+                        <span><i class="fas fa-envelope"></i> info@inukaproperties.co.ke</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties" class="logo-img">
+                    <h2>Inuka Afrika Properties</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="land-for-sale.html" class="nav-link">Land for Sale</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about/who-we-are.html">Who We Are</a></li>
+                            <li><a href="about/why-us.html">Why Us</a></li>
+                            <li><a href="about/our-team.html">Our Team</a></li>
+                            <li><a href="about/csr.html">CSR</a></li>
+                            <li><a href="about/our-partners.html">Our Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">IAPL Insider <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="insider/blogs.html">Blogs</a></li>
+                            <li><a href="insider/news.html">News</a></li>
+                            <li><a href="insider/market-research.html">Market Research</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Testimonials <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="testimonials/client-testimonials.html">Client Testimonials</a></li>
+                            <li><a href="testimonials/downloads.html">Downloads</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="book-visit.html" class="btn btn-primary book-visit-btn active">Book a Site Visit</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Book a Site Visit</h1>
+                <p>Schedule a visit to view our premium properties and land parcels</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Book a Site Visit</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-form-content">
+                <div class="booking-form-info">
+                    <h2>Schedule Your Site Visit</h2>
+                    <p>Experience our properties firsthand by booking a guided site visit. Our experts will show you around and answer all your questions.</p>
+                    <div class="booking-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Free Site Visit</h4>
+                                <p>No cost for guided property tours</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Guidance</h4>
+                                <p>Professional real estate consultants</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Flexible Scheduling</h4>
+                                <p>Choose a time that works for you</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Transportation Available</h4>
+                                <p>We can arrange transport if needed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form">
+                    <form id="bookingForm">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <h3>Property Selection</h3>
+                        <div class="form-group">
+                            <label for="propertyType">Property Type *</label>
+                            <select id="propertyType" name="propertyType" required>
+                                <option value="">Select property type</option>
+                                <option value="land">Land Parcel</option>
+                                <option value="house">House/Residential</option>
+                                <option value="commercial">Commercial Property</option>
+                                <option value="multiple">Multiple Properties</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Preferred Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select location</option>
+                                <option value="mombasa">Mombasa</option>
+                                <option value="nairobi">Nairobi</option>
+                                <option value="kiambu">Kiambu</option>
+                                <option value="nakuru">Nakuru</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="0-1000000">Under KES 1M</option>
+                                <option value="1000000-3000000">KES 1M - 3M</option>
+                                <option value="3000000-5000000">KES 3M - 5M</option>
+                                <option value="5000000+">Above KES 5M</option>
+                            </select>
+                        </div>
+
+                        <h3>Visit Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="visitDate">Preferred Date *</label>
+                                <input type="date" id="visitDate" name="visitDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="visitTime">Preferred Time *</label>
+                                <select id="visitTime" name="visitTime" required>
+                                    <option value="">Select time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="groupSize">Number of Visitors</label>
+                            <select id="groupSize" name="groupSize">
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5+">5+ people</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="transportation">Need Transportation?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="transportation" value="yes">
+                                    <span class="radio-custom"></span>
+                                    Yes, please arrange transport
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="transportation" value="no" checked>
+                                    <span class="radio-custom"></span>
+                                    No, I'll arrange my own transport
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequirements">Special Requirements</label>
+                            <textarea id="specialRequirements" name="specialRequirements" rows="4" placeholder="Any special requirements or accessibility needs..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information</label>
+                            <textarea id="additionalInfo" name="additionalInfo" rows="4" placeholder="Tell us more about your property requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <span class="checkmark"></span>
+                                I agree to the terms and conditions *
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-calendar-check"></i> Book Site Visit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What to Expect Section -->
+    <section class="expect-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What to Expect During Your Site Visit</h2>
+                <p>Your complete guide to a successful property viewing experience</p>
+            </div>
+            <div class="expect-grid">
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Professional Welcome</h3>
+                    <p>Meet our experienced real estate consultants who will guide you through the entire process.</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Property Tour</h3>
+                    <p>Comprehensive tour of the property including boundaries, access roads, and surrounding amenities.</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Documentation Review</h3>
+                    <p>Review of title deeds, survey plans, and other relevant property documentation.</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Investment Analysis</h3>
+                    <p>Detailed analysis of investment potential, market trends, and future development plans.</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Payment Options</h3>
+                    <p>Discussion of flexible payment plans, financing options, and investment strategies.</p>
+                </div>
+                <div class="expect-card">
+                    <div class="expect-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Q&A Session</h3>
+                    <p>Opportunity to ask questions and get expert advice on your real estate investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tips for a Successful Site Visit</h2>
+                <p>Make the most of your property viewing experience</p>
+            </div>
+            <div class="tips-content">
+                <div class="tips-list">
+                    <div class="tip-item">
+                        <div class="tip-number">01</div>
+                        <div class="tip-content">
+                            <h4>Come Prepared</h4>
+                            <p>Bring a notebook, camera, and any questions you have about the property.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-number">02</div>
+                        <div class="tip-content">
+                            <h4>Check the Location</h4>
+                            <p>Pay attention to accessibility, nearby amenities, and future development plans.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-number">03</div>
+                        <div class="tip-content">
+                            <h4>Ask Questions</h4>
+                            <p>Don't hesitate to ask about title deeds, infrastructure, and investment potential.</p>
+                        </div>
+                    </div>
+                    <div class="tip-item">
+                        <div class="tip-number">04</div>
+                        <div class="tip-content">
+                            <h4>Take Photos</h4>
+                            <p>Document the property condition and surrounding area for future reference.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tips-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Site Visit Tips">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to See Your Dream Property?</h2>
+                <p>Book your site visit today and take the first step towards your real estate investment.</p>
+                <div class="cta-buttons">
+                    <a href="#bookingForm" class="btn btn-primary">Book Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="https://res.cloudinary.com/dyfnobo9r/image/upload/v1756029907/download_2_pwhdnm.png" alt="Inuka Afrika Properties" class="logo-img">
+                            <h3>Inuka Afrika Properties Limited</h3>
+                        </div>
+                        <p>Your Elite Partner in Real Estate</p>
+                        <p class="tagline">Trust • Invest • Grow</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="land-for-sale.html">Land for Sale</a></li>
+                            <li><a href="about/who-we-are.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="book-visit.html">Book Site Visit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="land-for-sale.html">Land Sales</a></li>
+                            <li><a href="land-for-sale.html">Affordable Housing</a></li>
+                            <li><a href="contact.html">Property Management</a></li>
+                            <li><a href="contact.html">Title Deed Processing</a></li>
+                            <li><a href="contact.html">Investment Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>+254 711 082 084</p>
+                                <p>+254 700 000 000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>info@inukaproperties.co.ke</p>
+                                <p>sales@inukaproperties.co.ke</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Along Links Road, Nyali - Mombasa</p>
+                                <p>Opposite Kigothos Hotel</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Inuka Afrika Properties Limited. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms-of-service.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
