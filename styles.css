@@ -58,6 +58,13 @@ body {
     align-items: stretch;
 }
 
+/* Ensure top bar is always visible on home page */
+.header.has-top-bar .header-top {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
 .header.has-top-bar .header-top {
     height: 40px;
     display: flex;
@@ -253,6 +260,9 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
+    /* Ensure top bar is always visible on home page */
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .header-top-content {
@@ -301,11 +311,17 @@ body {
 .nav-logo {
     display: flex;
     align-items: center;
+    /* Ensure no text content is displayed */
+    font-size: 0;
+    line-height: 0;
 }
 
 .logo-img {
     height: 50px;
     width: auto;
+    /* Ensure logo image is properly contained and doesn't show text */
+    object-fit: contain;
+    max-width: 200px;
 }
 
 .nav-menu {
